@@ -1,6 +1,6 @@
-A responsive portfolio website showcasing my skills, projects, and experience.
+A portfolio website showcasing my skills, projects, and experience.
 
-## Technologies
+## Technologies 🛠️
 - HTML  
 - CSS
 
