@@ -55,14 +55,14 @@ body{
     border-radius: 20%;
     border: solid;
 }
-.profile p{
+/* .profile p{
     color: var(--highlighted-text);
     font-size: small;
     background-color: var(--bg-dark);
     padding: 2.5px;
     border-radius: 10px;
     border: solid 2px var(--border);
-}
+} */
 .contact-info{
     padding: 1rem;
     border-top: solid 2px var(--border);
@@ -73,6 +73,7 @@ body{
     color: var(--text-white);
 }
 .social{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -97,6 +98,9 @@ body{
     border-color: #3a3a3a;
     border-radius: 16px;
     width: 800px;
+}
+.mainbar p{
+    text-align: justify;
 }
 .header{
     border-bottom : solid;
@@ -126,12 +130,17 @@ nav a:hover{
 .mainbar h2{
     color: var(--text-white);
 }
-#about-me{
+#about-me, #skills, #projects{
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
-    padding-top: 1rem;
+    padding-top: 1rem;  
 }
+
 .line{
     height: 5px;
-    width: 50px;
+    width: 60px;
     background-color: var(--highlighted-border);
+    margin: 2px;
+    margin-bottom: 15px;
 }
