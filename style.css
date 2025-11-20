@@ -53,7 +53,6 @@ body{
     height: auto;
     border-radius: 20%;
     border: solid;
-    
 }
 .profile p{
     color: var(--highlighted-text);
@@ -79,18 +78,47 @@ body{
     gap: 5px;
 }
 .social img{
-    width: 40px;
+    width: 30px;
     height: auto;
+    transition: filter 0.3s ease;
 
+}
+.social img:hover{
+    filter: invert(0.7);
 }
 
 
 
 /* Main Content Stylings */
-.main-content{
+.mainbar{
     background-color: #2a2a2a;
     border: solid 2px;
     border-color: #3a3a3a;
     border-radius: 16px;
     width: 800px;
+}
+.header{
+    border-bottom : solid;
+    border-color: var(--border);
+    margin: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: end;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--text);
+    font-size: 18px;
+    transition: hover 0.3 ease;
+}
+nav a:hover{
+    color: var(--highlighted-text);
+}
+.active{
+    color: var(--highlighted-text);
 }
