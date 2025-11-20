@@ -5,6 +5,7 @@
     --highlighted-text: #FFBF00;
     --bg-grey: #2a2a2a;
     --border: #3a3a3a;
+    --highlighted-border: #FFBF00;
 }
 html{
     box-sizing: border-box;
@@ -121,4 +122,16 @@ nav a:hover{
 }
 .active{
     color: var(--highlighted-text);
+}
+.mainbar h2{
+    color: var(--text-white);
+}
+#about-me{
+    padding: 2rem;
+    padding-top: 1rem;
+}
+.line{
+    height: 5px;
+    width: 50px;
+    background-color: var(--highlighted-border);
 }
