@@ -1,6 +1,7 @@
 :root{
     --bg-dark: #1e1e1e;
     --text: #a0a0a0;
+    --text-white: white;
     --highlighted-text: #FFBF00;
     --bg-grey: #2a2a2a;
     --border: #3a3a3a;
@@ -37,18 +38,22 @@ body{
     padding: 1.5rem;
     display: flex;
     flex-flow: column nowrap;
+    gap: 2rem;
+    
 }
 .profile{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    
 }
 .profile img{
     width: 120px;
     height: auto;
     border-radius: 20%;
     border: solid;
+    
 }
 .profile p{
     color: var(--highlighted-text);
@@ -58,6 +63,27 @@ body{
     border-radius: 10px;
     border: solid 2px var(--border);
 }
+.contact-info{
+    padding: 1rem;
+    border-top: solid 2px var(--border);
+    border-bottom: solid 2px var(--border);
+}
+.contact-info p{
+    padding: 1px;
+    color: var(--text-white);
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+.social img{
+    width: 40px;
+    height: auto;
+
+}
+
 
 
 /* Main Content Stylings */
