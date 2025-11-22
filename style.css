@@ -14,7 +14,6 @@ html{
     box-sizing: inherit;
     margin: 0; padding: 0;
 }
-
 body{
     background-color: var(--bg-dark);
     color: var(--text);
@@ -54,7 +53,6 @@ body{
     border-radius: 20%;
     border: solid;
 }
-
 .contact-info{
     padding: 1rem;
     border-top: solid 2px var(--border);
@@ -81,7 +79,6 @@ body{
 .social img:hover{
     filter: invert(0);
 }
-
 .education h3{
     color: var(--text-white);
 
@@ -129,7 +126,6 @@ body{
     font-style: italic;
     font-weight: 700;
 }
-
 .work{
     font-size: 0.8rem ;
     font-style: normal;
@@ -181,7 +177,6 @@ nav a:hover{
     padding: 2rem;
     padding-top: 1rem;  
 }
-
 .line{
     height: 5px;
     width: 60px;
@@ -218,4 +213,32 @@ nav a:hover{
 .single-image img{
     filter: brightness(0) saturate(100%) invert(70%) sepia(58%) saturate(885%) hue-rotate(357deg) brightness(101%) contrast(106%);
 }
+.project-box{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;   
+}
+.indiv-projects{
+    border: solid var(--bg-grey);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--bg-dark);
+    width: 350px;
 
+}
+.indiv-projects img{
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+.project-content{
+    padding: 10px;
+}
+.project-content span{
+    padding: 2px;
+    color: var(--highlighted-text);
+    background-color: var(--bg-grey);
+    border: solid var(--bg-grey);
+    border-radius: 10px;
+    margin: 2px;
+}
