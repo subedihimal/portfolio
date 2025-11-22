@@ -55,14 +55,7 @@ body{
     border-radius: 20%;
     border: solid;
 }
-/* .profile p{
-    color: var(--highlighted-text);
-    font-size: small;
-    background-color: var(--bg-dark);
-    padding: 2.5px;
-    border-radius: 10px;
-    border: solid 2px var(--border);
-} */
+
 .contact-info{
     padding: 1rem;
     border-top: solid 2px var(--border);
@@ -75,7 +68,7 @@ body{
 .social{
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: center;
     gap: 5px;
 }
@@ -132,7 +125,7 @@ nav a:hover{
 }
 #about-me, #skills, #projects{
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     padding: 2rem;
     padding-top: 1rem;  
 }
@@ -144,3 +137,33 @@ nav a:hover{
     margin: 2px;
     margin-bottom: 15px;
 }
+.skill-images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+.single-image{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-dark);
+    border: solid var(--border);
+    border-radius: 15%;
+    width: 120px;
+    height: 130px;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    transition: transform 0.3 ease, box-shadow 0.3sec ease;
+
+}
+.single-image:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.single-image h3{
+    padding: 2px;
+}
+.single-image img{
+    filter: brightness(0) saturate(100%) invert(70%) sepia(58%) saturate(885%) hue-rotate(357deg) brightness(101%) contrast(106%);
+}
+
