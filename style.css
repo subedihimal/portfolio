@@ -34,8 +34,7 @@ body{
     background-color: var(--bg-grey);
     border: solid 2px var(--border);
     border-radius: 16px;
-    height: 95vh;   
-    width: 250px;
+    width: 350px;
     padding: 1.5rem;
     display: flex;
     flex-flow: column nowrap;
@@ -70,19 +69,72 @@ body{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
 }
 .social img{
     width: 30px;
     height: auto;
     transition: filter 0.3s ease;
+    filter: invert(0.7);
 
 }
 .social img:hover{
-    filter: invert(0.7);
+    filter: invert(0);
 }
 
+.education h3{
+    color: var(--text-white);
 
+}
+.education-items{
+    display: flex;
+    flex-direction: column;
+}
+.indiv-education{
+    padding-bottom: 30px;
+    padding-left: 15px;
+
+    position: relative;
+
+}
+.education h5{
+    color: var(--text-white);
+    font-size: 0.9rem;
+}
+.year{
+    font-size: 0.9rem;
+    font-style: oblique;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: var(--bg-dark);
+    border: solid  var(--highlighted-border);
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    
+}
+.vertical-line{    
+    width: 3px;
+    background-color: var(--border);
+    position: absolute;
+    top:15px;
+    left: 3px;
+    bottom: 0px;
+}
+.college{
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.work{
+    font-size: 0.8rem ;
+    font-style: normal;
+    text-align:justify ;
+}
 
 /* Main Content Stylings */
 .mainbar{
